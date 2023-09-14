@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/from-github/
+file_exists_behavior: OVERWRITE
+permissions:
+  - object: /home/ec2-user/from-github/
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
